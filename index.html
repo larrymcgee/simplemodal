@@ -9,12 +9,31 @@
 </head>
 <body>
     <button id="modalBtn" class="button">Click Here</button>
+    <table class="content-table">
+        <thead>
+            <tr>
+                <th><input type="checkbox"></th>
+                <th>Asset Tag</th>
+                <th>Label</th>
+                <th>Description</th>
+                <th>Serial Number</th>
+            </tr>
+        </thead>
+        <tbody id="myTable">
+        </tbody>
+    </table>
+    
+    
     <div id="simpleModal" class="modal">
          <div class="modal-content">
             <span id="closeBtn" class="closeBtn">&times;</span>
-                <p>Hello...I am a modal.</p>
+            <p>Hello...I am a modal.</p>
+            <button id="okBtn" class="button">Ok</button>
          </div>
     </div>
     <script src="main.js"></script>
+    <script>
+        buildTable(dataArray, 5);
+    </script>
 </body>
 </html>
